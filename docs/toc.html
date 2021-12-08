@@ -1,0 +1,744 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link href="coqdoc.css" rel="stylesheet" type="text/css" />
+<link href="coqdocjs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="config.js"></script>
+<script type="text/javascript" src="coqdocjs.js"></script>
+</head>
+
+<body onload="document.getElementById('content').focus()">
+  <div id="header">
+    <span class="left">
+      <span class="modulename"> <script> document.write(document.title) </script> </span>
+    </span>
+
+    <span class="button" id="toggle-proofs"></span>
+
+    <span class="right">
+      <a href="../">Project Page</a>
+      <a href="./indexpage.html"> Index </a>
+      <a href="./toc.html"> Table of Contents </a>
+    </span>
+</div>
+    <div id="content" tabindex="-1" onblur="document.getElementById('content').focus()">
+    <div id="main">
+<div id="toc">
+<a href="Metalib.AssocList.html"><h2>Metalib.AssocList</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.AssocList.html#lab1">Implementation</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab2">Basic definitions</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab3">List properties</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab4">Properties of <span class="inlinecode"><span class="id" title="var">map</span></span> and <span class="inlinecode"><span class="id" title="var">dom</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab5">The <span class="inlinecode"><span class="id" title="var">simpl_alist</span></span> tactic</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab6">The <span class="inlinecode"><span class="id" title="var">rewrite_alist</span></span> tactic</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab7">Induction</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab8">Basic facts about <span class="inlinecode"><span class="id" title="var">disjoint</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab9">Basic facts about <span class="inlinecode"><span class="id" title="var">uniq</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab10">Basic facts about <span class="inlinecode"><span class="id" title="var">binds</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab11">Hints</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab12">List properties</a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab13">Tactic support for <span class="inlinecode"><span class="id" title="var">disjoint</span></span> and <span class="inlinecode"><span class="id" title="var">uniq</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab14">Facts about <span class="inlinecode"><span class="id" title="var">uniq</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab15">Tactic support for <span class="inlinecode"><span class="id" title="var">binds</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab16">Facts about <span class="inlinecode"><span class="id" title="var">binds</span></span></a>
+
+</li>
+<li><a href="Metalib.AssocList.html#lab17">Hints</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqEqDec.html"><h2>Metalib.CoqEqDec</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqEqDec.html#lab18">Hints for <span class="inlinecode"><span class="id" title="var">equiv</span></span></a>
+
+</li>
+<li><a href="Metalib.CoqEqDec.html#lab19">Facts about <span class="inlinecode"><span class="id" title="var">EqDec</span></span></a>
+
+</li>
+<li><a href="Metalib.CoqEqDec.html#lab20">Specializing <span class="inlinecode"><span class="id" title="var">EqDec</span></span></a>
+
+</li>
+<li><a href="Metalib.CoqEqDec.html#lab21">Decidable equality</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqFSetDecide.html"><h2>Metalib.CoqFSetDecide</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqFSetDecide.html#lab22">Overview</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab23">Facts and Tactics for Propositional Logic</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqFSetDecide.html#lab24">Lemmas and Tactics About Decidable Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab25">Propositional Equivalences Involving Negation</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab26">Tactics for Negations</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab27">Auxiliary Tactics</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqFSetDecide.html#lab28">Generic Tactics</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab29">Discarding Irrelevant Hypotheses</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab30">Turning Set Operators into Propositional Connectives</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab31">Decidability of FSet Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab32">Normalizing Propositions About Equality</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab33">Considering Decidability of Base Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab34">Handling <span class="inlinecode"><span class="id" title="var">Empty</span></span>, <span class="inlinecode"><span class="id" title="var">Subset</span></span>, and <span class="inlinecode"><span class="id" title="var">Equal</span></span></a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab35">The Core <span class="inlinecode"><span class="id" title="var">fsetdec</span></span> Auxiliary Tactics</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab36">The <span class="inlinecode"><span class="id" title="var">fsetdec</span></span> Tactic</a>
+
+</li>
+<li><a href="Metalib.CoqFSetDecide.html#lab37">Examples</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqFSetInterface.html"><h2>Metalib.CoqFSetInterface</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqFSetInterface.html#lab38">Finite set library</a>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab39">Non-dependent signatures</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqFSetInterface.html#lab40">Functorial signature for weak sets</a>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab41">Static signature for weak sets</a>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab42">Functorial signature for sets on ordered elements</a>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab43">Static signature for sets on ordered elements</a>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab44">Some subtyping tests</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.CoqFSetInterface.html#lab45">Dependent signature</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqListFacts.html"><h2>Metalib.CoqListFacts</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqListFacts.html#lab46">List structure</a>
+
+</li>
+<li><a href="Metalib.CoqListFacts.html#lab47">List membership</a>
+
+</li>
+<li><a href="Metalib.CoqListFacts.html#lab48">List non-membership</a>
+
+</li>
+<li><a href="Metalib.CoqListFacts.html#lab49">List inclusion</a>
+
+</li>
+<li><a href="Metalib.CoqListFacts.html#lab50">Setoid facts</a>
+
+</li>
+<li><a href="Metalib.CoqListFacts.html#lab51">Uniqueness of proofs</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqMSetDecide.html"><h2>Metalib.CoqMSetDecide</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqMSetDecide.html#lab52">Overview</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab53">Facts and Tactics for Propositional Logic</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqMSetDecide.html#lab54">Lemmas and Tactics About Decidable Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab55">Propositional Equivalences Involving Negation</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab56">Tactics for Negations</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab57">Auxiliary Tactics</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqMSetDecide.html#lab58">Generic Tactics</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab59">Discarding Irrelevant Hypotheses</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab60">Turning Set Operators into Propositional Connectives</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab61">Decidability of FSet Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab62">Normalizing Propositions About Equality</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab63">Considering Decidability of Base Propositions</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab64">Handling <span class="inlinecode"><span class="id" title="var">Empty</span></span>, <span class="inlinecode"><span class="id" title="var">Subset</span></span>, and <span class="inlinecode"><span class="id" title="var">Equal</span></span></a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab65">The Core <span class="inlinecode"><span class="id" title="var">fsetdec</span></span> Auxiliary Tactics</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab66">The <span class="inlinecode"><span class="id" title="var">fsetdec</span></span> Tactic</a>
+
+</li>
+<li><a href="Metalib.CoqMSetDecide.html#lab67">Examples</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqMSetInterface.html"><h2>Metalib.CoqMSetInterface</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqMSetInterface.html#lab68">Finite set library</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqMSetInterface.html#lab69">Functorial signature for weak sets</a>
+
+</li>
+<li><a href="Metalib.CoqMSetInterface.html#lab70">Static signature for weak sets</a>
+
+</li>
+<li><a href="Metalib.CoqMSetInterface.html#lab71">Functorial signature for sets on ordered elements</a>
+
+</li>
+<li><a href="Metalib.CoqMSetInterface.html#lab72">Static signature for sets on ordered elements</a>
+
+</li>
+<li><a href="Metalib.CoqMSetInterface.html#lab73">Some subtyping tests</a>
+
+</li>
+<li><a href="Metalib.CoqMSetInterface.html#lab74">Signatures for set representations with ill-formed values.</a>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<a href="Metalib.CoqUniquenessTac.html"><h2>Metalib.CoqUniquenessTac</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqUniquenessTac.html#lab75">Auxiliary definitions</a>
+
+</li>
+<li><a href="Metalib.CoqUniquenessTac.html#lab76">Auxiliary facts</a>
+
+</li>
+<li><a href="Metalib.CoqUniquenessTac.html#lab77">Tactic for proving the uniqueness of objects</a>
+
+</li>
+</ul>
+<a href="Metalib.CoqUniquenessTacEx.html"><h2>Metalib.CoqUniquenessTacEx</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.CoqUniquenessTacEx.html#lab78">Examples</a>
+<ul class="doclist">
+<li><a href="Metalib.CoqUniquenessTacEx.html#lab79">Predicates on natural numbers</a>
+
+</li>
+<li><a href="Metalib.CoqUniquenessTacEx.html#lab80">Predicates on lists</a>
+
+</li>
+<li><a href="Metalib.CoqUniquenessTacEx.html#lab81">Vectors</a>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<a href="Metalib.FSetExtra.html"><h2>Metalib.FSetExtra</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.FSetExtra.html#lab82">Interface</a>
+
+</li>
+<li><a href="Metalib.FSetExtra.html#lab83">Implementation</a>
+
+</li>
+</ul>
+<a href="Metalib.FSetWeakNotin.html"><h2>Metalib.FSetWeakNotin</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.FSetWeakNotin.html#lab84">Implementation</a>
+
+</li>
+<li><a href="Metalib.FSetWeakNotin.html#lab85">Facts about set non-membership</a>
+
+</li>
+<li><a href="Metalib.FSetWeakNotin.html#lab86">Hints</a>
+
+</li>
+<li><a href="Metalib.FSetWeakNotin.html#lab87">Tactics for non-membership</a>
+
+</li>
+<li><a href="Metalib.FSetWeakNotin.html#lab88">Examples and test cases</a>
+
+</li>
+</ul>
+<a href="Metalib.LibDefaultSimp.html"><h2>Metalib.LibDefaultSimp</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.LibDefaultSimp.html#lab89">Variants on standard tactics</a>
+
+</li>
+<li><a href="Metalib.LibDefaultSimp.html#lab90">Tactics for inversion</a>
+
+</li>
+<li><a href="Metalib.LibDefaultSimp.html#lab91">Putting it all together</a>
+
+</li>
+</ul>
+<a href="Metalib.LibLNgen.html"><h2>Metalib.LibLNgen</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.LibLNgen.html#lab92">Assorted functions not in the standard library</a>
+
+</li>
+<li><a href="Metalib.LibLNgen.html#lab93">Tactics</a>
+
+</li>
+<li><a href="Metalib.LibLNgen.html#lab94">Facts about finite sets</a>
+
+</li>
+<li><a href="Metalib.LibLNgen.html#lab95">Hints</a>
+
+</li>
+</ul>
+<a href="Metalib.LibTactics.html"><h2>Metalib.LibTactics</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.LibTactics.html#lab96">Variations on built-in tactics</a>
+
+</li>
+<li><a href="Metalib.LibTactics.html#lab97">Delineating cases in proofs</a>
+<ul class="doclist">
+<li><a href="Metalib.LibTactics.html#lab98">Tactic definitions</a>
+
+</li>
+<li><a href="Metalib.LibTactics.html#lab99">Example</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="Metalib.LibTactics.html#lab100">Tactics for working with lists and proof contexts</a>
+
+</li>
+</ul>
+<a href="Metalib.MSetExtra.html"><h2>Metalib.MSetExtra</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.MSetExtra.html#lab101">Interface</a>
+
+</li>
+<li><a href="Metalib.MSetExtra.html#lab102">Implementation</a>
+
+</li>
+</ul>
+<a href="Metalib.MSetWeakNotin.html"><h2>Metalib.MSetWeakNotin</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.MSetWeakNotin.html#lab103">Implementation</a>
+
+</li>
+<li><a href="Metalib.MSetWeakNotin.html#lab104">Facts about set non-membership</a>
+
+</li>
+<li><a href="Metalib.MSetWeakNotin.html#lab105">Hints</a>
+
+</li>
+<li><a href="Metalib.MSetWeakNotin.html#lab106">Tactics for non-membership</a>
+
+</li>
+<li><a href="Metalib.MSetWeakNotin.html#lab107">Examples and test cases</a>
+
+</li>
+</ul>
+<a href="Metalib.Metatheory.html"><h2>Metalib.Metatheory</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.Metatheory.html#lab108">Notations for finite sets of atoms</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab109">Environments</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab110">Cofinite quantification</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab111">Lemma aliases</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab112">Hints</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab113">Decidable equality</a>
+
+</li>
+<li><a href="Metalib.Metatheory.html#lab114">Ott compatibility</a>
+
+</li>
+</ul>
+<a href="Metalib.MetatheoryAtom.html"><h2>Metalib.MetatheoryAtom</h2></a>
+<ul class="doclist">
+<li><a href="Metalib.MetatheoryAtom.html#lab115">Defining atoms</a>
+
+</li>
+<li><a href="Metalib.MetatheoryAtom.html#lab116">Finite sets of atoms</a>
+
+</li>
+<li><a href="Metalib.MetatheoryAtom.html#lab117">Properties</a>
+
+</li>
+<li><a href="Metalib.MetatheoryAtom.html#lab118">Tactic support for picking fresh atoms</a>
+
+</li>
+</ul>
+<a href="LN.Fsub_Definitions.html"><h2>LN.Fsub_Definitions</h2></a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Definitions.html#lab119"><a name="syntax"></a> Syntax (pre-terms)</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab120"><a name="open"></a> Opening terms</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab121"><a name="lc"></a> Local closure</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab122"><a name="env"></a> Environments</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab123"><a name="wf"></a> Well-formedness</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab124"><a name="sub"></a> Subtyping</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab125"><a name="typing_doc"></a> Typing</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab126"><a name="values"></a> Values</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab127"><a name="reduction"></a> Reduction</a>
+
+</li>
+<li><a href="LN.Fsub_Definitions.html#lab128"><a name="auto"></a> Automation</a>
+
+</li>
+</ul>
+<a href="LN.Fsub_Infrastructure.html"><h2>LN.Fsub_Infrastructure</h2></a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Infrastructure.html#lab129"><a name="fv"></a> Free variables</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab130"><a name="subst"></a> Substitution</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab131"><a name="gather_atoms"></a> The "<span class="inlinecode"><span class="id" title="var">gather_atoms</span></span>" tactic</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab132"><a name="properties"></a> Properties of opening and substitution</a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Infrastructure.html#lab133">Properties of type substitution in types</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab134">Properties of type substitution in expressions</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab135">Properties of expression substitution in expressions</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab136"><a name="lc"></a> Local closure is preserved under substitution</a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab137"><a name="body"></a> Properties of <span class="inlinecode"><span class="id" title="var">body_e</span></span></a>
+
+</li>
+<li><a href="LN.Fsub_Infrastructure.html#lab138"><a name="auto"></a> Automation</a>
+
+</li>
+</ul>
+<a href="LN.Fsub_Lemmas.html"><h2>LN.Fsub_Lemmas</h2></a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Lemmas.html#lab139"><a name="wft"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_typ</span></span></a>
+
+</li>
+<li><a href="LN.Fsub_Lemmas.html#lab140"><a name="oktwft"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_env</span></span> and <span class="inlinecode"><span class="id" title="var">wf_typ</span></span></a>
+
+</li>
+<li><a href="LN.Fsub_Lemmas.html#lab141"><a name="okt"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_env</span></span></a>
+
+</li>
+<li><a href="LN.Fsub_Lemmas.html#lab142"><a name="subst"></a> Environment is unchanged by substitution for a fresh name</a>
+
+</li>
+<li><a href="LN.Fsub_Lemmas.html#lab143"><a name="regularity"></a> Regularity of relations</a>
+
+</li>
+<li><a href="LN.Fsub_Lemmas.html#lab144"><a name="auto"></a> Automation</a>
+
+</li>
+</ul>
+<a href="LN.Fsub_Soundness.html"><h2>LN.Fsub_Soundness</h2></a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Soundness.html#lab145"><a name="subtyping"></a> Properties of subtyping</a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Soundness.html#lab146">Reflexivity (1)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab147">Weakening (2)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab148">Narrowing and transitivity (3)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab149">Type substitution preserves subtyping (10)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab150"><a name="typing"></a> Properties of typing</a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Soundness.html#lab151">Weakening (5)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab152">Strengthening (6)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab153">Narrowing for typing (7)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab154">Substitution preserves typing (8)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab155">Type substitution preserves typing (11)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab156"><a name="preservation"></a> Preservation</a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Soundness.html#lab157">Inversion of typing (13)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab158">Preservation (20)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab159"><a name="progress"></a> Progress</a>
+<ul class="doclist">
+<li><a href="LN.Fsub_Soundness.html#lab160">Canonical forms (14)</a>
+
+</li>
+<li><a href="LN.Fsub_Soundness.html#lab161">Progress (16)</a>
+
+</li>
+</ul>
+
+</li>
+</ul>
+<a href="LNgen.Fsub_ott.html"><h2>LNgen.Fsub_ott</h2></a>
+<a href="LNgen.Fsub_inf.html"><h2>LNgen.Fsub_inf</h2></a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_inf.html#lab162">Induction principles for nonterminals</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab163">Close</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab164">Size</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab165">Degree</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab166">Local closure (version in <span class="inlinecode"><span class="id" title="keyword">Set</span></span>, induction principles)</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab167">Body</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab168">Tactic support</a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab169">Theorems about <span class="inlinecode"><span class="id" title="var">size</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab170">Theorems about <span class="inlinecode"><span class="id" title="var">degree</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab171">Theorems about <span class="inlinecode"><span class="id" title="var">open</span></span> and <span class="inlinecode"><span class="id" title="var">close</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab172">Theorems about <span class="inlinecode"><span class="id" title="var">lc</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab173">More theorems about <span class="inlinecode"><span class="id" title="var">open</span></span> and <span class="inlinecode"><span class="id" title="var">close</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab174">Theorems about <span class="inlinecode"><span class="id" title="var">fv</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab175">Theorems about <span class="inlinecode"><span class="id" title="tactic">subst</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_inf.html#lab176">"Restore" tactics</a>
+
+</li>
+</ul>
+<a href="LNgen.Fsub_proofs.html"><h2>LNgen.Fsub_proofs</h2></a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_proofs.html#lab177">Compatability with the original development: Hints, notations, etc.</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab178"><a name="wft"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_typ</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab179"><a name="oktwft"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_env</span></span> and <span class="inlinecode"><span class="id" title="var">wf_typ</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab180"><a name="okt"></a> Properties of <span class="inlinecode"><span class="id" title="var">wf_env</span></span></a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab181"><a name="subst"></a> Environment is unchanged by substitution for a fresh name</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab182"><a name="regularity"></a> Regularity of relations</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab183"><a name="auto"></a> Automation</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab184"><a name="subtyping"></a> Properties of subtyping</a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_proofs.html#lab185">Reflexivity (1)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab186">Weakening (2)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab187">Narrowing and transitivity (3)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab188">Type substitution preserves subtyping (10)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab189"><a name="typing"></a> Properties of typing</a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_proofs.html#lab190">Weakening (5)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab191">Strengthening (6)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab192">Narrowing for typing (7)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab193">Substitution preserves typing (8)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab194">Type substitution preserves typing (11)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab195"><a name="preservation"></a> Preservation</a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_proofs.html#lab196">Inversion of typing (13)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab197">Preservation (20)</a>
+
+</li>
+</ul>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab198"><a name="progress"></a> Progress</a>
+<ul class="doclist">
+<li><a href="LNgen.Fsub_proofs.html#lab199">Canonical forms (14)</a>
+
+</li>
+<li><a href="LNgen.Fsub_proofs.html#lab200">Progress (16)</a>
+
+</li>
+</ul>
+
+</li>
+</ul>
+</div>
+</div>
+<div id="footer">
+  Generated by <a href="http://coq.inria.fr/">coqdoc</a> and improved with <a href="https://github.com/tebbi/coqdocjs">CoqdocJS</a>
+</div>
+</div>
+</body>
+
+</html>
